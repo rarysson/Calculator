@@ -8,6 +8,76 @@ let numbers = [];
 let valueIndex = 0;
 let error = false;
 
+window.addEventListener("keydown", function(event) {
+	switch (event.keyCode) {
+		case 48:
+		case 96:
+			insertValue(0);
+			break;
+		case 49:
+		case 97:
+			insertValue(1);
+			break;
+		case 50:
+		case 98:
+			insertValue(2);
+			break;
+		case 51:
+		case 99:
+			insertValue(3);
+			break;
+		case 52:
+		case 100:
+			insertValue(4);
+			break;
+		case 53:
+		case 101:
+			insertValue(5);
+			break;
+		case 54:
+		case 102:
+			insertValue(6);
+			break;
+		case 55:
+		case 103:
+			insertValue(7);
+			break;
+		case 56:
+		case 104:
+			insertValue(8);
+			break;
+		case 57:
+		case 105:
+			insertValue(9);
+			break;
+		case 110:
+		case 190:
+			insertValue('.');
+			break;
+		case 107:
+			insertOperator(add);
+			break;
+		case 109:
+		case 173:
+			insertOperator(subtract);
+			break;
+		case 106:
+			insertOperator(multiply);
+			break;
+		case 111:
+		case 59:
+			insertOperator(divide);
+			break;
+		case 8:
+			deleteLastValue();
+			break;
+		case 61:
+		case 13:
+			calculate();
+			break;
+	}
+});
+
 function add(a, b) {
 	return a + b;
 }

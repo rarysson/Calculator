@@ -11,6 +11,10 @@ main {
 	background-color: darkgrey;
 }
 
+button:hover {
+	background-color: rgba(38, 97, 200, 0.5);
+}
+
 #display {
 	text-align: right;
 	box-sizing: border-box;
@@ -37,18 +41,22 @@ main {
 	height: 70px;
 	float: left;
 	box-sizing: border-box;
+	background-color: #8f9091;
 }
 
 .clear {
 	width: 60%;
+	background-color: #ff4500;
 }
 
 .delete {
 	width: 40%;
+	background-color: #ff4500;
 }
 
 .number {
 	width: 33.33%;
+	background-color: #8f9091;
 }
 
 .zero {
