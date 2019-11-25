@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main>
+			<input type="text" id="display" value="0" readonly translate="no">
+
+			<div id="digits">
+				<button type="button" class="digit clear" onclick="clearValue()">C</button>
+				<button type="button" class="digit delete" onclick="deleteLastValue()">⌫</button>
+				<button type="button" class="digit number" onclick="insertValue(7)">7</button>
+				<button type="button" class="digit number" onclick="insertValue(8)">8</button>
+				<button type="button" class="digit number" onclick="insertValue(9)">9</button>
+				<button type="button" class="digit number" onclick="insertValue(4)">4</button>
+				<button type="button" class="digit number" onclick="insertValue(5)">5</button>
+				<button type="button" class="digit number" onclick="insertValue(6)">6</button>
+				<button type="button" class="digit number" onclick="insertValue(1)">1</button>
+				<button type="button" class="digit number" onclick="insertValue(2)">2</button>
+				<button type="button" class="digit number" onclick="insertValue(3)">3</button>
+				<button type="button" class="digit zero" onclick="insertValue(0)">0</button>
+				<button type="button" class="digit point" onclick="insertValue('.')">.</button>
+			</div>
+
+			<div id="operators">
+				<button type="button" class="operator" onclick="insertOperator(divide)">÷</button>
+				<button type="button" class="operator" onclick="insertOperator(multiply)">×</button>
+				<button type="button" class="operator" onclick="insertOperator(subtract)">-</button>
+				<button type="button" class="operator" onclick="insertOperator(add)">+</button>
+				<button type="button" class="operator" onclick="calculate()">=</button>
+			</div>
+		</main>
+	</body>
+
+	<script src="./script.js"></script>
+</html>
